@@ -36,9 +36,9 @@ export default function Settings({localData,setLocalData}) {
     
     return (
         <>
-        <ul>
+        <ul className='settings_list'>
             {Object.entries(categories).map(([category,enabled]) =>(
-                <li key={category}>
+                <li key={category} className='settings_item'>
                     <p>{category}</p>
                     <PillBtn checked={enabled} click={() => toggleCategory(category)}/>
                 </li>
@@ -46,7 +46,7 @@ export default function Settings({localData,setLocalData}) {
             
             )}
         </ul>
-        <button onClick={toggleDarkMode}>theme</button>
+        <button className={"theme_btn"} onClick={toggleDarkMode}>{localData.settings.darkMode && "switch to light mode" || "switch to dark mode"}</button>
         </>
     )
 }

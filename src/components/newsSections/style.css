@@ -16,11 +16,16 @@
 }
 .article_image{
     max-height: 80px;
+    border-radius: 1rem;
 }
 .article{
     display: flex;
     flex-direction: row;
-    margin: 10px;
+    border-top: solid #c5c5c5;
+    padding: 5px 0 5px 0;
+}
+.article:last-child{
+    border-bottom: solid #c5c5c5;
 }
 .article_headline{
     margin: 3px 0 0 0;  
@@ -31,7 +36,16 @@
 }
 .article_text{
     margin: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
 .article__text_wrapper{
     margin-left: 5px;
+}
+.section__title_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

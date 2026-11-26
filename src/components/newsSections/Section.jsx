@@ -10,10 +10,10 @@ export default function Section({section,catagory}) {
   }
   return (
     <section>
-        <div>
+        <div className='section__title_wrapper'>
           <h2>{section.section}</h2>
-        <h2>{catagory}</h2>
         <MdArrowForwardIos onClick={handleClick} className={`"section_arrow ${opened ? "fold_out":"fold_in"}`}/>
+        </div>
         <ul className={`section_list ${opened ? "article_open":"article_closed"}`}>
             {section.results.map((result,index)=>(
               <Article 
@@ -23,7 +23,7 @@ export default function Section({section,catagory}) {
               />
             ))}
         </ul>
-        </div>
+        
     </section>
   )
 }
