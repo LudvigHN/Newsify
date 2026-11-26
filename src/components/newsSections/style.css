@@ -1,0 +1,37 @@
+.fold_in{
+    transform: rotate(0deg); 
+   transition: all 1s;
+}
+.fold_out{
+   transform: rotate(90deg); 
+   transition: all 1s;
+}
+.article_closed{
+    display: none;
+    
+}
+.section_list{
+    max-height: 500px;
+    overflow-y: scroll;
+}
+.article_image{
+    max-height: 80px;
+}
+.article{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.article_headline{
+    margin: 3px 0 0 0;  
+    max-width: 70vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.article_text{
+    margin: 0;
+}
+.article__text_wrapper{
+    margin-left: 5px;
+}

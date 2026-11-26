@@ -1,0 +1,12 @@
+{
+    "settings":{
+        "darkMode":false,
+        "categories":{
+            "health":true,
+            "home":true,
+            "world":true,
+            "business":true,
+            "movies":true
+        }
+    }
+}
